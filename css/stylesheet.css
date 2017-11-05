@@ -1,0 +1,204 @@
+@font-face {
+  font-family: 'fuell';
+  src: url('../fonts/fuell.ttf') format('truetype');
+}
+
+.navlogo {
+  max-height: 60px;
+  width: auto;
+  padding-top: 5px;
+}
+@media only screen and (max-width: 600px) {
+  .navlogo {
+    max-height: 55px;
+    width: auto;
+    padding-top: 2px;
+  }
+}
+
+.nav-container {
+  margin:0 auto;
+  max-width:1280px;
+  width:90%;
+}
+@media only screen and (min-width: 601px) {
+  .nav-container {
+    width:85%
+  }
+}
+@media only screen and (min-width: 993px) {
+  .nav-container {
+    width:70%
+    }
+}
+
+
+.slider .indicators .indicator-item {
+    background-color: transparent;
+    border: 2px  #e0e0e0 solid;
+}
+
+.slider .indicators .indicator-item.active {
+    background-color: white;
+    border: 2px  white solid;
+}
+
+
+.container {
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .carousel .carousel-item {
+    width: 700px !important;
+    height: auto !important;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .carousel .carousel-item {
+    width: 400px !important;
+    height: auto !important;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .carousel .carousel-item {
+    width: 200px !important;
+    height: auto !important;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .carousel {
+    height: 700px !important;
+    margin-top: -50px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .carousel {
+    height: 400px !important;
+    margin-top: -50px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .carousel {
+    height: 200px !important;
+    margin-top: 0px;
+  }
+}
+
+.block {
+  text-align: justify;
+}
+
+.carouselcontainer {
+    margin:0 auto;
+    width: 95%;
+}
+
+.footer-container {
+  margin:0 auto;
+  max-width:1280px;
+  width:90%;
+}
+@media only screen and (min-width: 601px) {
+  .footer-container {
+    width:85%
+  }
+}
+@media only screen and (min-width: 993px) {
+  .footer-container {
+    width:70%
+    }
+}
+
+.page-footer {
+    background-color: rgba(255,0,0,1) !important;
+}
+
+nav ul li.active {
+    background-color: rgba(0,0,0,0.2);
+}
+
+.parallax-container {
+  height: 400px;
+}
+
+.icon-block .material-icons {
+    font-size: 70px;
+    color: red !important;
+}
+
+.members {
+  padding: 15px;
+  max-width: 100%;
+  height: auto;
+}
+
+h4 small {
+  color: #969696;
+}
+
+.social {
+  color: #c9c9c9;
+}
+
+.youtube:hover {
+  color: #bb0000;
+}
+.twitch:hover {
+  color: #6441a5;
+}
+.twitter:hover {
+  color: #00aced;
+}
+.facebook:hover {
+  color: #3b5998;
+}
+.instagram:hover {
+  color: #bc2a8d;
+}
+.steam:hover {
+  color: #242424;
+}
+.fa-5x {
+    font-size: 7em;
+}
+
+
+@media only screen and (max-width: 601px) {
+  .row .col.s0 {
+    display: none;
+  }
+}
+
+.tabs .tab a {
+  color: rgb(171, 171, 171) !important;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+  color: #000000 !important;
+}
+
+.tabs .indicator {
+  background-color: #827f7f !important;
+}
+
+div.content-button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+a.content-button {
+  width: 100%;
+  padding-left: auto;
+  padding-right: auto;
+  height: 60px;
+}
+
+.parallax, img {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
