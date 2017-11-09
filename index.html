@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="shortcut icon" href="images/icon.png" />
-    <title></title>
+    <title>Official RYZR Website</title>
   </head>
   <body>
     <header>
@@ -42,7 +42,7 @@
       </ul>
     </header>
 
-    <div class="fixed-action-btn scale-transition tooltipped" data-position="left" data-delay="50" data-tooltip="back to top">
+    <div class="fixed-action-btn scale-transition tooltipped" data-position="left" data-delay="50" data-tooltip="Back to Top">
       <a class="btn-floating page-scroll" href="#home" id="backtotop">
         <i class="material-icons">keyboard_arrow_up</i>
       </a>
@@ -54,21 +54,21 @@
         <ul class="slides">
           <li>
             <img src="images/slider/slider1.jpg">
-            <div class="caption left-align">
+            <div class="caption left-align" style="text-shadow: 0 2px 2px rgba(0, 0, 0, 1)">
               <h3>FILM</h3>
               <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
             </div>
           </li>
           <li>
             <img src="images/slider/slider2.jpg">
-            <div class="caption center-align">
+            <div class="caption center-align" style="text-shadow: 0 2px 2px rgba(0, 0, 0, 1)">
               <h3>TECH</h3>
               <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
             </div>
           </li>
           <li>
             <img src="images/slider/slider3.jpg">
-            <div class="caption right-align">
+            <div class="caption right-align" style="text-shadow: 0 2px 2px rgba(0, 0, 0, 1)">
               <h3>GAMING</h3>
               <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
             </div>
@@ -84,9 +84,7 @@
             <div class="col s12 m6 l6 z-depth-2">
               <a class="twitter-timeline" data-tweet-limit="3" data-chrome="nofooter noheader noborders" data-width="700" data-height="100" href="https://twitter.com/R_Y_Z_R">Tweets by R_Y_Z_R</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
-            <div class="col s0 m6 l6 z-depth-2">
-              <a class="twitter-timeline"  href="https://twitter.com/search?q=%40R_Y_Z_R" data-tweet-limit="5" data-width="700" data-height="300" data-chrome="nofooter noheader noborders" data-widget-id="866939742776176640">Tweets über @R_Y_Z_R </a>
-              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            <div class="col s0 m6 l6">
             </div>
           </div>
         </div>
@@ -193,25 +191,49 @@
         <div class="section center">
           <h2 class="header">Content</h2>
           <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
-          <div class="row">
+          <div class="row show-on-med-and-down">
             <div class="col s12">
               <div class="video-container">
-                <iframe src="http://www.youtube.com/embed?max-results=1&showinfo=0&rel=0&listType=user_uploads&list=ryzrde" disablekb="1" allowfullscreen></iframe>
+                <iframe id="videoSmall" src="http://www.youtube.com/embed?max-results=1&showinfo=0&rel=0&listType=user_uploads&list=ryzrde" disablekb="1" allowfullscreen></iframe>
               </div>
             </div>
             <div class="col s12">
               <div class="row">
                 <div class="col s3 content-button">
-                  <a class="waves-effect waves-light btn-large">text</a>
+                  <button onclick="newSmall()" class="waves-effect waves-light btn-large" style="width: 100%; background-color: rgba(29, 41, 57, 1); !important"><i class="material-icons left">fiber_new</i> Neuestes</button>
                 </div>
                 <div class="col s3 content-button">
-                  <a class="waves-effect waves-light btn-large">text</a>
+                  <button onclick="filmSmall()" class="waves-effect waves-light btn-large" style="width: 100%; background-color: rgba(29, 175, 154, 1) !important"><i class="material-icons left">local_movies</i> Filme</button>
                 </div>
                 <div class="col s3 content-button">
-                  <a class="waves-effect waves-light btn-large">text</a>
+                  <button onclick="gamingSmall()" class="waves-effect waves-light btn-large" style="width: 100%; background-color: rgba(194, 205, 68, 1) !important"><i class="material-icons left">mouse</i> Gaming</button>
                 </div>
                 <div class="col s3 content-button">
-                  <a class="waves-effect waves-light btn-large">text</a>
+                  <button onclick="techSmall()" class="waves-effect waves-light btn-large" style="width: 100%; background-color: rgba(238, 100, 87, 1) !important"><i class="material-icons left-btn">build</i> Tech</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row hide-on-med-and-down">
+            <div class="col s10">
+              <div class="video-container">
+                <iframe id="videoBig" src="http://www.youtube.com/embed?max-results=1&showinfo=0&rel=0&listType=user_uploads&list=ryzrde" disablekb="1" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="col s2">
+              <div class="row">
+                <div class="col s12 content-button">
+                  <button onclick="newBig()" class="waves-effect waves-light btn-large" style="width: 100%; background-color: rgba(29, 41, 57, 1); !important">Neuestes</button>
+                </div>
+                <div class="col s12 content-button">
+                  <button onclick="filmBig()" class="waves-effect waves-light btn-large" style="width: 100%; background-color: rgba(29, 175, 154, 1) !important">Filme</button>
+                </div>
+                <div class="col s12 content-button">
+                  <button onclick="gamingBig()" class="waves-effect waves-light btn-large" style="width: 100%; background-color: rgba(194, 205, 68, 1) !important">Gaming</button>
+                </div>
+                <div class="col s12 content-button">
+                  <button onclick="techBig()" class="waves-effect waves-light btn-large" style="width: 100%; background-color: rgba(238, 100, 87, 1) !important">Tech</button>
                 </div>
               </div>
             </div>
@@ -230,7 +252,7 @@
           <h2 class="header">Social Media</h2>
           <p class="grey-text text-darken-3 lighten-3">Hier sind alle unsere Social Media Seiten nochmals genau aufgelistet und für euch verlinkt.</p>
           <br>
-          <div class="row">
+          <div class="row show-on-medium-and-down">
             <div class="col s6 m6 l2">
               <a href="https://www.youtube.com/ryzrde" target="_blank" class="social youtube"><i class="fa fa-youtube fa-5x" aria-hidden="true"></i><br>YouTube</a>
               <br><br>
@@ -267,6 +289,36 @@
       <div class="container" id="contact">
         <div class="section center">
           <h2 class="header">Contact</h2>
+          <div class="row">
+            <div class="col s12 m6 l6">
+            </div>
+
+            <div class="col s12 m6 l6">
+              <form method="post">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input type="text" id="firstname" name="firstname" required />
+                    <label for="firstname">Firstname</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input type="text" id="lastname" name="lastname" required />
+                    <label for="lastname">Lastname</label>
+                  </div>
+                  <div class="input-field col s12">
+                    <input type="email" id="email" name="email" required />
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="input-field col s12">
+                    <textarea id="message" name="message" class="materialize-textarea" style="height: 135px; max-height: 135px;" required></textarea>
+                    <label for="message">Message</label>
+                  </div>
+                  <div class="input-field col s12 center-align">
+                    <button type='submit' id="send" name='send' class="btn waves-effect waves-light btn-large rainbow"><i class="material-icons right">send</i> Send Message</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
         </div>
       </div>
@@ -281,8 +333,8 @@
     <footer>
     </footer>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/materialize.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="js/javascript.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.color-2.1.2.js"></script>

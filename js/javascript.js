@@ -188,3 +188,29 @@ $(function() {
     }
   });
 });
+
+function newSmall() {
+  document.getElementById('videoSmall').src = "http://www.youtube.com/embed?max-results=1&showinfo=0&rel=0&listType=user_uploads&list=ryzrde";
+}
+function filmSmall() {
+  document.getElementById('videoSmall').src = "https://www.youtube.com/embed/videoseries?list=PLCAV3qU7VqSrr4M_dxVS2gq9npQ5SXUOE";
+}
+function gamingSmall() {
+  document.getElementById('videoSmall').src = "https://www.youtube.com/embed/videoseries?list=PLCAV3qU7VqSq31pDpKyb8As-pyiBBD4M1";
+}
+function techSmall() {
+  document.getElementById('videoSmall').src = "https://www.youtube.com/embed/videoseries?list=PLCAV3qU7VqSqz-qU9QBEZD0_RxhKtaGyS";
+}
+
+function newBig() {
+  document.getElementById('videoBig').src = "http://www.youtube.com/embed?max-results=1&showinfo=0&rel=0&listType=user_uploads&list=ryzrde";
+}
+function filmBig() {
+  document.getElementById('videoBig').src = "https://www.youtube.com/embed/videoseries?list=PLCAV3qU7VqSrr4M_dxVS2gq9npQ5SXUOE";
+}
+function gamingBig() {
+  document.getElementById('videoBig').src = "https://www.youtube.com/embed/videoseries?list=PLCAV3qU7VqSq31pDpKyb8As-pyiBBD4M1";
+}
+function techBig() {
+  document.getElementById('videoBig').src = "https://www.youtube.com/embed/videoseries?list=PLCAV3qU7VqSqz-qU9QBEZD0_RxhKtaGyS";
+}
