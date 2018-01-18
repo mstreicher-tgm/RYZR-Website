@@ -114,7 +114,7 @@
 }
 
 .page-footer {
-    background-color: rgba(255,0,0,1) !important;
+    background-color: rgba(29, 41, 57, 1) !important;
 }
 
 nav ul li.active {
@@ -230,6 +230,23 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+.input-field input[type=date]:focus + label,
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field input[type=password]:focus + label,
+.input-field textarea:focus + label {
+  color: rgba(29, 41, 57, 1) !important;
+}
+
+.input-field input[type=date]:focus,
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=password]:focus,
+.input-field textarea:focus {
+  border-bottom: 2px solid rgba(29, 41, 57, 1) !important;
+  box-shadow: none !important;
+}
+
 .rainbow {
   background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
   background-size: 1800% 1800%;
@@ -258,3 +275,13 @@ body::-webkit-scrollbar-thumb {
 @keyframes rainbow {
     0%{background-position:0% 82%}
     50%{background-position:100% 19%}
+}
+
+.modal {
+  width: 500px !important;
+}
+@media only screen and (max-width: 500px) {
+  .modal {
+    width: auto !important;
+  }
+}
